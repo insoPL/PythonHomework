@@ -1,3 +1,4 @@
+from __future__ import division
 import fractions
 
 
@@ -53,3 +54,7 @@ def cmp_frac(frac1, frac2):
     if is_positive(w): return 1
     elif is_zero(w): return 0
     else: return -1
+
+
+def frac2float(frac):
+    return float(frac[0]/frac[1])
