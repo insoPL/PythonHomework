@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c49bb6e-a8ee-451a-8060-2429f117864d" name="Default" comment="">
+    <list default="true" id="1c49bb6e-a8ee-451a-8060-2429f117864d" name="Default" comment="testunit module added to fracs">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python5/fracs.py" afterPath="$PROJECT_DIR$/python5/fracs.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python5/main.py" afterPath="$PROJECT_DIR$/python5/main.py" />
     </list>
     <ignored path="PythonHomework.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,14 +32,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fracs.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="fracs.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python5/fracs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
+            <state relative-caret-position="1989">
               <caret line="117" column="49" selection-start-line="117" selection-start-column="49" selection-end-line="117" selection-end-column="49" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -83,6 +91,7 @@
         <option value="$PROJECT_DIR$/python5/rekurencja.py" />
         <option value="$PROJECT_DIR$/python5/main.py" />
         <option value="$PROJECT_DIR$/python5/fracs.py" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
       </list>
     </option>
   </component>
@@ -187,6 +196,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="ChangesBrowser.SHOW_FLATTEN" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -511,7 +521,14 @@
       <option name="project" value="LOCAL" />
       <updated>1479066019314</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="testunit module added to fracs">
+      <created>1479078286112</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1479078286138</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -609,7 +626,8 @@
     <MESSAGE value="5.2 in progress&#10;" />
     <MESSAGE value="5 final&#10;&#10;" />
     <MESSAGE value="5 final - this time fo real&#10;&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="5 final - this time fo real&#10;&#10;" />
+    <MESSAGE value="testunit module added to fracs" />
+    <option name="LAST_COMMIT_MESSAGE" value="testunit module added to fracs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -744,11 +762,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/python5/fracs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
+        <state relative-caret-position="1989">
           <caret line="117" column="49" selection-start-line="117" selection-start-column="49" selection-end-line="117" selection-end-column="49" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
