@@ -10,4 +10,3 @@ print rekurencja.fibonacci(5)
 import fracs
 
 print fracs.frac2float(fracs.sub_frac([2, 3], [1, 2]))
-
