@@ -1,6 +1,6 @@
 # 5.1
 
-from python4 import rekurencja
+import rekurencja
 
 print rekurencja.factorial(6)
 print rekurencja.fibonacci(5)
