@@ -3,6 +3,78 @@ import fractions
 import unittest
 
 
+class Frac:
+    """Klasa reprezentujaca ulamek."""
+
+    def _check(self, *arg):
+        if self.y == 0:
+            raise ZeroDivisionError
+        if not isinstance(check.x, int) or not isinstance(check.y, int):
+            raise ValueError
+        for foo in arg:
+            if foo.y == 0:
+                raise ZeroDivisionError
+            if not isinstance(foo, Frac) or not isinstance(foo.x, int) or not isinstance(foo.y, int):
+                raise ValueError
+
+    def _skroc(self):
+        nwd = fractions.gcd(self.x, self.y)
+        self.x = int(self.x / nwd)
+        self.y = int(self.y / nwd)
+
+    def __init__(self, x=0, y=1):
+        self.x = x
+        self.y = y
+        check()
+        skroc()
+        if y < 0:
+            y *= -1
+            x *= -1
+
+    def __str__(self):         # zwraca "x/y" lub "x" dla y=1
+        if self.y == 1:
+            return str(self.x)
+        return str(self.x)+"/"+str(self.y)
+
+    def __repr__(self):        # zwraca "Frac(x, y)"
+        return "Frac(" + str(self.x) + ", " + str(self.y) + ")"
+
+    def __add__(self, other):  # frac1 + frac2
+        check(other)
+        self.x *= other.y
+        other.x *= self.y
+        self.y *= other.y
+
+        self.x += other.x
+        check()
+
+    def __sub__(self, other):  # frac1 - frac2
+        check(other)
+        self.x *= other.y
+        other.x *= self.y
+        self.y *= other.y
+
+        self.x -= other.x
+        check()
+
+    def __mul__(self, other): pass  # frac1 * frac2
+
+    def __div__(self, other): pass  # frac1 / frac2
+
+    # operatory jednoargumentowe
+    def __pos__(self):  # +frac = (+1)*frac
+        return self
+
+    def __neg__(self):  # -frac = (-1)*frac
+        return Frac(-self.x, self.y)
+
+    def __invert__(self):  # odwrotnosc: ~frac
+        return Frac(self.y, self.x)
+
+    def __cmp__(self, other): pass  # cmp(frac1, frac2)
+
+    def __float__(self): pass       # float(frac)
+
 def skroc(frac):
     check(frac)
 
@@ -83,36 +155,9 @@ def frac2float(frac):
 
     return float(frac[0]/frac[1])
 
-class TestStatisticalFunctions(unittest.TestCase):
-    def testSkroc(self):
-        self.assertEqual(skroc([2, 4]), [1, 2])
-        self.assertEqual(skroc([3, 9]), [1, 3])
-        self.assertEqual(skroc([15, 3]), [5, 1])
-        self.assertRaises(ValueError, skroc, "cos sie...cos sie zepsulo")
 
-    def testAddFrac(self):
-        self.assertEqual(add_frac([2, 3], [4, 3]), [2, 1])
-        self.assertEqual(add_frac([5, 12], [14, 24]), [1, 1])
-    def testSubfrac(self):
-        self.assertEqual(sub_frac([2, 3], [4, 3]), [-2, 3])
-        self.assertEqual(sub_frac([5, 12], [14, 24]), [-1, 6])
-    def testMulfrac(self):
-        self.assertEqual(mul_frac([2, 3], [4, 3]), [8, 9])
-        self.assertEqual(mul_frac([5, 12], [14, 24]), [35, 144])
-    def testDivfrac(self):
-        self.assertEqual(div_frac([2, 3], [1, 3]), [2, 1])
-        self.assertEqual(div_frac([1, 1], [1, 8]), [8, 1])
-        self.assertRaises(ZeroDivisionError, div_frac, [3, 0], [1, 1])
-    def testIsPositive(self):
-        self.assertFalse(is_positive([-1, 1]))
-        self.assertTrue(is_positive([-1, -8]))
-        self.assertRaises(ValueError, is_positive, "cos sie...cos sie zepsulo")
-    def testIsZero(self):
-        self.assertTrue(is_zero([0, 123]))
-        self.assertRaises(ValueError, is_zero, "cos sie...cos sie zepsulo")
-    def testCmpFrac(self):
-        self.assertEqual(cmp_frac([1, 2], [1, 2]), 0)
-        self.assertEqual(cmp_frac([1, 2], [2, 4]), 0)
-    def frac2float(self):
-        self.assertRaises(ValueError, is_positive, 1)
-        self.assertEqual(frac2float([1, 2]), 0.5)
+class TestFracsClass(unittest.TestCase):
+
+
+    def testSkroc(self):
+        self.assertEqual(Frac(6,4)._skroc(self),Frac(3,2))
