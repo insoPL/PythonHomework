@@ -6,30 +6,29 @@ import unittest
 class Frac:
     """Klasa reprezentujaca ulamek."""
 
-    def _check(self, *arg):
+    def check(self):
         if self.y == 0:
             raise ZeroDivisionError
-        if not isinstance(check.x, int) or not isinstance(check.y, int):
+        if not isinstance(self, Frac) or not isinstance(self.x, int) or not isinstance(self.y, int):
             raise ValueError
-        for foo in arg:
-            if foo.y == 0:
-                raise ZeroDivisionError
-            if not isinstance(foo, Frac) or not isinstance(foo.x, int) or not isinstance(foo.y, int):
-                raise ValueError
 
-    def _skroc(self):
+    def skroc(self):
         nwd = fractions.gcd(self.x, self.y)
         self.x = int(self.x / nwd)
         self.y = int(self.y / nwd)
 
     def __init__(self, x=0, y=1):
-        self.x = x
-        self.y = y
-        check()
-        skroc()
-        if y < 0:
-            y *= -1
-            x *= -1
+        if isinstance(x, Frac):
+            self.x = x.x
+            self.y = x.y
+        else:
+            self.x = x
+            self.y = y
+        self.check()
+        self.skroc()
+        if self.y < 0:
+            self.y *= -1
+            self.x *= -1
 
     def __str__(self):         # zwraca "x/y" lub "x" dla y=1
         if self.y == 1:
@@ -40,30 +39,55 @@ class Frac:
         return "Frac(" + str(self.x) + ", " + str(self.y) + ")"
 
     def __add__(self, other):  # frac1 + frac2
-        check(other)
-        self.x *= other.y
-        other.x *= self.y
-        self.y *= other.y
+        other.check()
+        other.skroc()
 
-        self.x += other.x
-        check()
+        xx = other.x
+
+        foo = Frac(self)
+
+        foo.x *= other.y
+        foo.y *= other.y
+        xx *= self.y
+
+        foo.x += xx
+        foo.skroc()
+        return foo
 
     def __sub__(self, other):  # frac1 - frac2
-        check(other)
-        self.x *= other.y
-        other.x *= self.y
-        self.y *= other.y
+        other.check()
+        other.skroc()
+        xx = other.x
 
-        self.x -= other.x
-        check()
+        foo = Frac(self)
 
-    def __mul__(self, other): pass  # frac1 * frac2
+        foo.x *= other.y
+        foo.y *= other.y
+        xx *= self.y
 
-    def __div__(self, other): pass  # frac1 / frac2
+        print foo, xx
+
+        foo.x -= xx
+        foo.skroc()
+        return foo
+
+    def __mul__(self, other):  # frac1 * frac2
+        other.check()
+        other.skroc()
+
+        foo = Frac(self)
+
+        foo.x *= other.x
+        foo.y *= other.y
+        foo.skroc()
+        return foo
+
+    def __truediv__(self, other):  # frac1 / frac2
+        return self*(~other)
 
     # operatory jednoargumentowe
     def __pos__(self):  # +frac = (+1)*frac
-        return self
+        return Frac(self)
 
     def __neg__(self):  # -frac = (-1)*frac
         return Frac(-self.x, self.y)
@@ -71,93 +95,49 @@ class Frac:
     def __invert__(self):  # odwrotnosc: ~frac
         return Frac(self.y, self.x)
 
-    def __cmp__(self, other): pass  # cmp(frac1, frac2)
+    def __cmp__(self, other):  # cmp(frac1, frac2)
+        wyn = (self-other).__float__()
+        if wyn > 0:
+            return 1
+        if wyn == 0:
+            return 0
+        if wyn < 1:
+            return -1
 
-    def __float__(self): pass       # float(frac)
-
-def skroc(frac):
-    check(frac)
-
-    nwd = fractions.gcd(*frac)
-    frac[0] = int(frac[0] / nwd)
-    frac[1] = int(frac[1] / nwd)
-
-    return frac
-
-def check(*arg):
-    for frac in arg:
-        if frac[1] == 0:
-            raise ZeroDivisionError
-        if not isinstance(frac, list) or not isinstance(frac[0], int) or not isinstance(frac[1], int):
-            raise ValueError
-
-def add_frac(frac1, frac2):
-    check(frac1, frac2)
-
-    frac1[0] *= frac2[1]
-    frac2[0] *= frac1[1]
-    frac1[1] *= frac2[1]
-
-    return skroc([frac1[0]+frac2[0], frac1[1]])
-
-
-def sub_frac(frac1, frac2):
-    check(frac1, frac2)
-
-    frac1[0] *= frac2[1]
-    frac2[0] *= frac1[1]
-    frac1[1] *= frac2[1]
-
-    print frac1, frac2
-    return skroc([frac1[0]-frac2[0], frac1[1]])
-
-
-def mul_frac(frac1, frac2):
-    check(frac1, frac2)
-
-    frac1[0] *= frac2[0]
-    frac1[1] *= frac2[1]
-    return skroc(frac1)
-
-
-def div_frac(frac1, frac2):
-    check(frac1, frac2)
-
-    frac1[0] *= frac2[1]
-    frac1[1] *= frac2[0]
-    return skroc(frac1)
-
-
-def is_positive(frac):
-    check(frac)
-
-    if frac[0]*frac[1] > 0: return True
-    else: return False
-
-
-def is_zero(frac):
-    check(frac)
-
-    if frac[0] == 0: return True
-    else: return False
-
-
-def cmp_frac(frac1, frac2):
-    check(frac1, frac2)
-    w = sub_frac(frac1, frac2)
-    if is_positive(w): return 1
-    elif is_zero(w): return 0
-    else: return -1
-
-
-def frac2float(frac):
-    check(frac)
-
-    return float(frac[0]/frac[1])
+    def __float__(self):      # float(frac)
+        return float(self.x/self.y)
 
 
 class TestFracsClass(unittest.TestCase):
 
+    def testInit(self):
+        self.assertEqual(Frac(3, 2), Frac(3, 2))
+        self.assertEqual(Frac(6, 4), Frac(3, 2))
+        self.assertEqual(Frac(15, 3), Frac(25, 5))
+        self.assertEqual(Frac(-15, 4), Frac(15, -4))
+        self.assertRaises(ZeroDivisionError, Frac, 12, 0)
+        self.assertRaises(ValueError, Frac, ["xD", "Niskie"])
 
-    def testSkroc(self):
-        self.assertEqual(Frac(6,4)._skroc(self),Frac(3,2))
+    def testAdd(self):
+        self.assertEqual(Frac(2, 3) + Frac(4, 3), Frac(2, 1))
+        self.assertEqual(Frac(1, 12) + Frac(14, 24), Frac(2, 3))
+        self.assertRaises(ZeroDivisionError, Frac, 12, 0)
+        self.assertRaises(ValueError, Frac, ["xD", "Niskie"])
+
+    def testSub(self):
+        self.assertEqual(Frac(2, 3) - Frac(4, 3), Frac(-2, 3))
+        self.assertEqual(Frac(1, 12) - Frac(14, 24), Frac(-1, 2))
+        self.assertRaises(ZeroDivisionError, Frac, 12, 0)
+        self.assertRaises(ValueError, Frac, ["xD", "Niskie"])
+
+    def testMul(self):
+        self.assertEqual((Frac(2, 3) * Frac(4, 3)), Frac(8, 9))
+        self.assertEqual((Frac(5, 12) * Frac(14, 24)), Frac(35, 144))
+        self.assertRaises(ZeroDivisionError, Frac, 12, 0)
+        self.assertRaises(ValueError, Frac, ["xD", "Niskie"])
+
+    def testDiv(self):
+        self.assertEqual((Frac(2, 3) / (Frac(1, 3))), Frac(2, 1))
+        self.assertEqual((Frac(1, 1) / Frac(1, 8)), Frac(8, 1))
+        self.assertRaises(ZeroDivisionError, Frac, 12, 0)
+        self.assertRaises(ValueError, Frac, ["xD", "Niskie"])
