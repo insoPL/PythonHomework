@@ -96,7 +96,7 @@ class Frac:
         return Frac(self.y, self.x)
 
     def __cmp__(self, other):  # cmp(frac1, frac2)
-        wyn = (self-other).__float__()
+        wyn = float(self-other)
         if wyn > 0:
             return 1
         if wyn == 0:
