@@ -137,7 +137,7 @@ class TestFracsClass(unittest.TestCase):
         self.assertRaises(ValueError, Frac, ["xD", "Niskie"])
 
     def testDiv(self):
-        self.assertEqual((Frac(2, 3) / (Frac(1, 3))), Frac(2, 1))
+        self.assertEqual(Frac(2, 3) / (Frac(1, 3)), Frac(2, 1))
         self.assertEqual((Frac(1, 1) / Frac(1, 8)), Frac(8, 1))
         self.assertRaises(ZeroDivisionError, Frac, 12, 0)
         self.assertRaises(ValueError, Frac, ["xD", "Niskie"])
