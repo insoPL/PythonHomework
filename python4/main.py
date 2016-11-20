@@ -26,16 +26,14 @@ def factorial(n):
 
 
 def fibonacci(n):
-    if n == 0 or n == 1:
-        return 1
-    pop = 1
+    pop = 0
     pop2 = 1
-    for n in xrange(n - 2):
+    for z in xrange(n):
         tym = pop
         pop = pop + pop2
         pop2 = tym
     return pop
-
+print fibonacci(6)
 
 # 4.5
 

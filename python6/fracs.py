@@ -141,3 +141,9 @@ class TestFracsClass(unittest.TestCase):
         self.assertEqual((Frac(1, 1) / Frac(1, 8)), Frac(8, 1))
         self.assertRaises(ZeroDivisionError, Frac, 12, 0)
         self.assertRaises(ValueError, Frac, ["xD", "Niskie"])
+
+    def testCMP(self):
+        self.assertTrue(Frac(2, 1) > Frac(1, 2))
+        self.assertTrue(Frac(1, -2) < Frac(-1, 3))
+        self.assertRaises(ZeroDivisionError, Frac, 12, 0)
+        self.assertRaises(ValueError, Frac, ["xD", "Niskie"])
