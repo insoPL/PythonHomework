@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c49bb6e-a8ee-451a-8060-2429f117864d" name="Default" comment="python7 fracs finalized">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python7/fracs.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/python7/fracs" afterPath="" />
+    <list default="true" id="1c49bb6e-a8ee-451a-8060-2429f117864d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python6/points.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python6/fracs.py" afterPath="$PROJECT_DIR$/python6/fracs.py" />
     </list>
     <ignored path="PythonHomework.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,13 +23,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="fracs.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="fracs.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python6/fracs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="141" column="0" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+            <state relative-caret-position="327">
+              <caret line="141" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="points.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/python6/points.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,6 +88,8 @@
         <option value="$PROJECT_DIR$/python5/polsy.py" />
         <option value="$PROJECT_DIR$/python7/fracs" />
         <option value="$PROJECT_DIR$/python6/fracs.py" />
+        <option value="$PROJECT_DIR$/python6/rectangles.py" />
+        <option value="$PROJECT_DIR$/python6/points.py" />
       </list>
     </option>
   </component>
@@ -218,7 +230,7 @@
       <recent name="C:\Users\Łukasz\PycharmProjects\PythonHomework\python4" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in fracs">
+  <component name="RunManager" selected="Python tests.Unittests in points">
     <configuration default="false" name="Unittests in fracs (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -263,23 +275,6 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python5" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PythonHomework" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python5/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="Unittests in fracs" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -317,6 +312,28 @@
       <option name="METHOD_NAME" value="testSub" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in points" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python6" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PythonHomework" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python6/points.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
       <option name="PUREUNITTEST" value="true" />
@@ -479,17 +496,17 @@
       <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in fracs (1)" />
       <item index="1" class="java.lang.String" itemvalue="Python.polsy" />
       <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in polsy" />
-      <item index="3" class="java.lang.String" itemvalue="Python.main (1)" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in fracs" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittest TestFracsClass.testSub" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in fracs" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest TestFracsClass.testSub" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in points" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in fracs" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest TestFracsClass.testSub" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in fracs (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in polsy" />
-        <item index="4" class="java.lang.String" itemvalue="Python.main (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in points" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in fracs" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest TestFracsClass.testSub" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in fracs (1)" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in polsy" />
       </list>
     </recent_temporary>
   </component>
@@ -651,46 +668,53 @@
       <option name="project" value="LOCAL" />
       <updated>1479663980460</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="python7 fracs finalized">
+      <created>1479668554329</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1479668554329</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_fracs - 2016.11.20 at 19h 35m 32s.xml">
-      <configuration name="Unittests in fracs" configurationId="tests" />
+    <history-entry file="Unittests_in_points - 2016.11.20 at 21h 16m 34s.xml">
+      <configuration name="Unittests in points" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_fracs - 2016.11.20 at 19h 35m 38s.xml">
-      <configuration name="Unittests in fracs" configurationId="tests" />
+    <history-entry file="Unittests_in_points - 2016.11.20 at 21h 20m 16s.xml">
+      <configuration name="Unittests in points" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_fracs - 2016.11.20 at 19h 38m 05s.xml">
-      <configuration name="Unittests in fracs" configurationId="tests" />
+    <history-entry file="Unittests_in_points - 2016.11.20 at 21h 20m 24s.xml">
+      <configuration name="Unittests in points" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_fracs - 2016.11.20 at 19h 38m 29s.xml">
-      <configuration name="Unittests in fracs" configurationId="tests" />
+    <history-entry file="Unittests_in_points - 2016.11.20 at 21h 20m 39s.xml">
+      <configuration name="Unittests in points" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_fracs - 2016.11.20 at 19h 38m 37s.xml">
-      <configuration name="Unittests in fracs" configurationId="tests" />
+    <history-entry file="Unittests_in_points - 2016.11.20 at 21h 21m 03s.xml">
+      <configuration name="Unittests in points" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_fracs - 2016.11.20 at 19h 39m 41s.xml">
-      <configuration name="Unittests in fracs" configurationId="tests" />
+    <history-entry file="Unittests_in_points - 2016.11.20 at 21h 21m 08s.xml">
+      <configuration name="Unittests in points" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_fracs - 2016.11.20 at 19h 43m 54s.xml">
-      <configuration name="Unittests in fracs" configurationId="tests" />
+    <history-entry file="Unittests_in_points - 2016.11.20 at 21h 21m 13s.xml">
+      <configuration name="Unittests in points" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_fracs - 2016.11.20 at 19h 44m 07s.xml">
-      <configuration name="Unittests in fracs" configurationId="tests" />
+    <history-entry file="Unittests_in_points - 2016.11.20 at 21h 23m 36s.xml">
+      <configuration name="Unittests in points" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_fracs - 2016.11.20 at 19h 44m 53s.xml">
-      <configuration name="Unittests in fracs" configurationId="tests" />
+    <history-entry file="Unittests_in_points - 2016.11.20 at 21h 24m 39s.xml">
+      <configuration name="Unittests in points" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_fracs - 2016.11.20 at 19h 45m 00s.xml">
-      <configuration name="Unittests in fracs" configurationId="tests" />
+    <history-entry file="Unittests_in_points - 2016.11.20 at 21h 24m 57s.xml">
+      <configuration name="Unittests in points" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23938507" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23938507" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -738,7 +762,8 @@
     <MESSAGE value="final py 6 commit" />
     <MESSAGE value="5.3 testing unit added&#10;" />
     <MESSAGE value="7 init and copied from python6" />
-    <option name="LAST_COMMIT_MESSAGE" value="7 init and copied from python6" />
+    <MESSAGE value="python7 fracs finalized" />
+    <option name="LAST_COMMIT_MESSAGE" value="python7 fracs finalized" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -956,12 +981,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python6/fracs.py">
+    <entry file="file://$PROJECT_DIR$/python6/rectangles.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="141" column="0" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python7/fracs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python6/fracs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="141" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python6/points.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
