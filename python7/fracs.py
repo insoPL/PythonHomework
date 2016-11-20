@@ -21,6 +21,10 @@ class Frac:
         if isinstance(x, Frac):
             self.x = x.x
             self.y = x.y
+        elif isinstance(x, float):
+            foo = float(x).as_integer_ratio()
+            self.x = foo[0]
+            self.y = foo[1]
         else:
             self.x = x
             self.y = y
@@ -139,6 +143,7 @@ class TestFracsClass(unittest.TestCase):
         self.assertEqual(Frac(-15, 4), Frac(15, -4))
         self.assertRaises(ZeroDivisionError, Frac, 12, 0)
         self.assertRaises(ValueError, Frac, ["xD", "Niskie"])
+        self.assertEqual(Frac(2.5), Frac(5, 2))
 
     def testAdd(self):
         self.assertEqual(Frac(2, 3) + Frac(4, 3), Frac(2, 1))
