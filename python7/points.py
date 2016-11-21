@@ -1,6 +1,6 @@
 import unittest
 import math
-
+import copy
 
 class Point:
     """Klasa reprezentujaca punkty na plaszczyznie."""
@@ -8,6 +8,15 @@ class Point:
     def __init__(self, x=0, y=0):  # konstuktor
         self.x = x
         self.y = y
+
+    def __deepcopy__(self, memodict={}):
+        not_there = []
+        existing = memodict.get(self, not_there)
+        if existing is not not_there:
+            return existing
+        dup = Point(copy.deepcopy(self.x, memodict), copy.deepcopy(self.y, memodict))
+        memodict[self] = dup
+        return dup
 
     def __str__(self):         # zwraca string "(x, y)"
         return "("+str(self.x)+", "+str(self.y)+")"
