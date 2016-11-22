@@ -9,13 +9,16 @@ class Point:
         self.x = x
         self.y = y
 
+    def __hash__(self):
+        return hash(repr(self))
+
     def __deepcopy__(self, memodict={}):
         not_there = []
-        existing = memodict.get(self, not_there)
+        existing = memodict.get(id(self), not_there)
         if existing is not not_there:
             return existing
         dup = Point(copy.deepcopy(self.x, memodict), copy.deepcopy(self.y, memodict))
-        memodict[self] = dup
+        memodict[self] = id(dup)
         return dup
 
     def __str__(self):         # zwraca string "(x, y)"
@@ -83,3 +86,6 @@ class TestPoint(unittest.TestCase):
 
     def testSkalar(self):
         self.assertEqual(Point(1, 2) * Point(4, -2), 0)
+
+    def testDeepcopy(self):
+        self.assertEqual(Point(1, 2), copy.deepcopy(Point(1, 2)))

@@ -14,12 +14,17 @@ class Circle:
         self.pt = Point(x, y)
         self.radius = radius
 
+    def __hash__(self):
+        return hash(repr(self))
+
     def __deepcopy__(self, memodict={}):
         not_there = []
         existing = memodict.get(self, not_there)
         if existing is not not_there:
             return existing
-        dup = Point(copy.deepcopy(self.pt, memodict), copy.deepcopy(self.radius, memodict))
+
+        dup = Circle(copy.deepcopy(self.pt.x, memodict), copy.deepcopy(self.pt.y, memodict), copy.deepcopy(self.radius, memodict))
+
         memodict[self] = dup
         return dup
 
@@ -36,9 +41,8 @@ class Circle:
         return math.pi*math.pow(self.radius, 2)
 
     def move(self, x, y):
-        foo = Circle(self)
-        foo.pt.x += x
-        foo.pt.y += y
+        foo = copy.deepcopy(self)
+        foo.pt = foo.pt + Point(x, y)
         return foo
 
     def cover(self, other): pass   # okrag pokrywajacy oba
@@ -61,3 +65,5 @@ class TestCircle(unittest.TestCase):
     def testCopy(self):
         self.assertEqual(Circle(2, 2, 2), copy.deepcopy(Circle(2, 2, 2)))
 
+    def testMove(self):
+        self.assertEqual(Circle(2, 2, 2).move(1, 1), Circle(3, 3, 2))
