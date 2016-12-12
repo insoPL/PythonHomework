@@ -33,7 +33,7 @@ def heron(a, b, c):
 heron(3, 3, 3)
 
 
-def P(a, b):
+def P(a, b):  # 1 000 w ponad 2 min
     if a < 0 or b < 0:
         raise ValueError
     elif a == 0 and b == 0:
@@ -45,27 +45,24 @@ def P(a, b):
     else:
         return 0.5 * (P(a - 1, b) + P(a, b - 1))
 
-def P_dynamic(a, b):
+
+def P_dynamic(a, b):  # 10 000 w 20 sek
     P_dict = dict()
 
     if a < 0 or b < 0:
         raise ValueError
-    for sum in xrange(max(a, b)):
-        for aa in xrange(min(sum, a+1)):
-            for bb in xrange(min(sum, b+1)):
-                print "[", aa, ", ", bb, "]"
-                if aa == 0 and bb == 0:
-                    P_dict[aa, bb] = 0.5
-                elif aa > 0 and bb == 0:
-                    P_dict[aa, bb] = 0
-                elif aa == 0 and bb > 0:
-                    P_dict[aa, bb] = 1,
-                elif aa > 0 and bb > 0:
-                    print "WTF"
-                    P_dict[aa, bb] = (P_dict[aa - 1, bb] + P_dict[aa, bb - 1])
+    for aa in xrange(a+1):
+        for bb in xrange(b+1):
+            if aa == 0 and bb == 0.0:
+                P_dict[aa, bb] = 0.5
+            elif aa > 0 and bb == 0:
+                P_dict[aa, bb] = 0.0
+            elif aa == 0 and bb > 0:
+                P_dict[aa, bb] = 1.0
+            elif aa > 0 and bb > 0:
+                P_dict[aa, bb] = P_dict[aa - 1, bb] + P_dict[aa, bb - 1]
     return P_dict[a, b]
 
-#for i in xrange(10):
- #   for j in xrange(10):
-  #      print P_dynamic(i, j)
-print P_dynamic(2,2)
+for i in xrange(1000):
+    for j in xrange(10):
+        P_dynamic(i, j)
