@@ -27,6 +27,9 @@ def delete_head(node):
 
 
 def remove_tail(node):
+    if node.next is None:
+        return None, node.data
+
     new_head = node
     while node.next.next:
         node = node.next
