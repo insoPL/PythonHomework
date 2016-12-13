@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c49bb6e-a8ee-451a-8060-2429f117864d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python9/9.1.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python9/9.7.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Python3/main.py" afterPath="$PROJECT_DIR$/python3/main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python9/9.7.py" afterPath="$PROJECT_DIR$/python9/9.7.py" />
     </list>
     <ignored path="PythonHomework.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/python9/9.1.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -38,8 +36,8 @@
       <file leaf-file-name="9.7.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python9/9.7.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="114">
+              <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -203,29 +201,7 @@
       <recent name="C:\Users\Łukasz\PycharmProjects\PythonHomework\python4" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main (1)">
-    <configuration default="false" name="Unittests in fracs (2)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python7" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PythonHomework" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python7/fracs.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.9.7">
     <configuration default="false" name="Unittests in circles" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -300,6 +276,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PythonHomework" />
       <option name="SCRIPT_NAME" value="C:\Users\Łukasz\PycharmProjects\PythonHomework\python9\9.1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="9.7" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python9" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PythonHomework" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python9/9.7.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -457,19 +450,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.polsy" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in fracs (2)" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in circles" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in points (1)" />
-      <item index="4" class="java.lang.String" itemvalue="Python.main" />
-      <item index="5" class="java.lang.String" itemvalue="Python.main (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in circles" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in points (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Python.main" />
+      <item index="4" class="java.lang.String" itemvalue="Python.main (1)" />
+      <item index="5" class="java.lang.String" itemvalue="Python.9.7" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.main (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.main" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in circles" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in points (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in fracs (2)" />
+        <item index="0" class="java.lang.String" itemvalue="Python.9.7" />
+        <item index="1" class="java.lang.String" itemvalue="Python.main (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.main" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in circles" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in points (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -687,7 +680,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481554527879</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="9.1">
+      <created>1481663579951</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1481663579951</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1097,15 +1097,15 @@
     <entry file="file://$PROJECT_DIR$/python9/9.1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/python9/9.7.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="114">
+          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
           <folding />
         </state>
       </provider>
