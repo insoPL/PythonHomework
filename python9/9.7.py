@@ -1,5 +1,4 @@
-# -*- coding: utf-8 -*-class Node:
-
+# -*- coding: utf-8 -*-
 
 class Node:
     """Klasa reprezentująca węzeł drzewa binarnego."""
