@@ -47,6 +47,7 @@ def gauss_random_list(n):
     re_list = list()
     for i in xrange(n):
         re_list.append(gauss_random_number(10))
+    return re_list
 
 
 def random_list_from_given_list(n, k):
@@ -56,3 +57,6 @@ def random_list_from_given_list(n, k):
     for i in xrange(n):
         ret_list.append(random.choice(K))
     return ret_list
+
+lista = gauss_random_list(15)
+print lista
