@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c49bb6e-a8ee-451a-8060-2429f117864d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python11/11.3.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/python12/12.4.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python11/11.1.py" afterPath="$PROJECT_DIR$/python11/11.1.py" />
     </list>
     <ignored path="PythonHomework.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -16,7 +15,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/PythonHomework$11_3.coverage" NAME="11.3 Coverage Results" MODIFIED="1482152510678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python11" />
+    <SUITE FILE_PATH="coverage/PythonHomework$12_4.coverage" NAME="12.4 Coverage Results" MODIFIED="1482184972422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python12" />
+    <SUITE FILE_PATH="coverage/PythonHomework$11_3.coverage" NAME="11.3 Coverage Results" MODIFIED="1482184948263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python11" />
     <SUITE FILE_PATH="coverage/PythonHomework$11_1.coverage" NAME="11.1 Coverage Results" MODIFIED="1481895015054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python11" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -31,18 +31,18 @@
       <file leaf-file-name="11.1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python11/11.1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="8" selection-end-column="18" />
+            <state relative-caret-position="221">
+              <caret line="58" column="15" lean-forward="false" selection-start-line="58" selection-start-column="15" selection-end-line="58" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="11.3.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/python11/11.3.py">
+      <file leaf-file-name="12.4.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/python12/12.4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state relative-caret-position="238">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -115,6 +115,7 @@
         <option value="$PROJECT_DIR$/python10/10.8.py" />
         <option value="$PROJECT_DIR$/python11/11.1.py" />
         <option value="$PROJECT_DIR$/python11/11.3.py" />
+        <option value="$PROJECT_DIR$/python12/12.4.py" />
       </list>
     </option>
   </component>
@@ -212,6 +213,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="python12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PythonHomework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PythonHomework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="python11" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -258,25 +273,7 @@
       <recent name="C:\Users\Łukasz\PycharmProjects\PythonHomework\python4" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.11.3">
-    <configuration default="false" name="10.4" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python10" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PythonHomework" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python10/10.4.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.12.4">
     <configuration default="false" name="Unittests in 10.4" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -350,6 +347,24 @@
       <module name="PythonHomework" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python11/11.3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="12.4" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python12" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PythonHomework" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python12/12.4.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -588,19 +603,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.polsy" />
-      <item index="1" class="java.lang.String" itemvalue="Python.10.4" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in 10.4" />
-      <item index="3" class="java.lang.String" itemvalue="Python.10.8" />
-      <item index="4" class="java.lang.String" itemvalue="Python.11.1" />
-      <item index="5" class="java.lang.String" itemvalue="Python.11.3" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in 10.4" />
+      <item index="2" class="java.lang.String" itemvalue="Python.10.8" />
+      <item index="3" class="java.lang.String" itemvalue="Python.11.1" />
+      <item index="4" class="java.lang.String" itemvalue="Python.11.3" />
+      <item index="5" class="java.lang.String" itemvalue="Python.12.4" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.11.3" />
-        <item index="1" class="java.lang.String" itemvalue="Python.11.1" />
-        <item index="2" class="java.lang.String" itemvalue="Python.10.8" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in 10.4" />
-        <item index="4" class="java.lang.String" itemvalue="Python.10.4" />
+        <item index="0" class="java.lang.String" itemvalue="Python.12.4" />
+        <item index="1" class="java.lang.String" itemvalue="Python.11.3" />
+        <item index="2" class="java.lang.String" itemvalue="Python.11.1" />
+        <item index="3" class="java.lang.String" itemvalue="Python.10.8" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in 10.4" />
       </list>
     </recent_temporary>
   </component>
@@ -881,7 +896,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481830962019</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="11.3 release">
+      <created>1482152559260</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1482152559260</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -988,7 +1010,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="5 final - this time fo real&#10;&#10;" />
     <MESSAGE value="testunit module added to fracs" />
     <MESSAGE value="copy from python5 and init" />
     <MESSAGE value="python 6 init" />
@@ -1013,7 +1034,8 @@
     <MESSAGE value="10.4 release" />
     <MESSAGE value="10.8 release" />
     <MESSAGE value="11.1 release" />
-    <option name="LAST_COMMIT_MESSAGE" value="11.1 release" />
+    <MESSAGE value="11.3 release" />
+    <option name="LAST_COMMIT_MESSAGE" value="11.3 release" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1022,13 +1044,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/python7/circles.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="32" lean-forward="false" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python7/points.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1320,6 +1335,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/python11/11.3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python11/11.1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="58" column="15" lean-forward="false" selection-start-line="58" selection-start-column="15" selection-end-line="58" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/python6/fracs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="918">
@@ -1330,18 +1361,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python11/11.1.py">
+    <entry file="file://$PROJECT_DIR$/python12/12.4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="8" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python11/11.3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state relative-caret-position="238">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
