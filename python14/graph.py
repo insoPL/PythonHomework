@@ -1,39 +1,15 @@
 # -*- coding: utf-8 -*-
 
 
-class Graph:
-    
+class Graph(object):
     def __init__(self):
         self.graph_dict = {}
-    
-    def add_node(self, node):
+
+    def add_node(self, *nodes):
         """Wstawia wierzchołek do grafu."""
-        if node not in self.graph_dict:
-            self.graph_dict[node] = []
-
-    def add_edge_directed(self, edge):
-        """Dodaje krawędź do grafu skierowanego."""
-        source, target = edge
-        self.add_node(self.graph_dict, source)
-        self.add_node(self.graph_dict, target)
-        # Możemy wykluczyć pętle.
-        if source == target:
-            raise ValueError("pętle są zabronione")
-        if target not in self.graph_dict[source]:
-            self.graph_dict[source].append(target)
-
-    def add_edge_undirected(self, edge):
-        """Dodaje krawędź do grafu nieskierowanego."""
-        source, target = edge
-        self.add_node(self.graph_dict, source)
-        self.add_node(self.graph_dict, target)
-        # Możemy wykluczyć pętle.
-        if source == target:
-            raise ValueError("pętle są zabronione")
-        if target not in self.graph_dict[source]:
-            self.graph_dict[source].append(target)
-        if source not in self.graph_dict[target]:
-            self.graph_dict[target].append(source)
+        for node in nodes:
+            if node not in self.graph_dict:
+                self.graph_dict[node] = []
 
     def listnodes(self):
         """Zwraca listę wierzchołków grafu."""
@@ -54,3 +30,33 @@ class Graph:
             for target in self.graph_dict[source]:
                 print target,
             print
+
+
+class GraphDirected(Graph):
+    def add_edge(self, *edges):
+        """Dodaje krawędź do grafu skierowanego."""
+        for edge in edges:
+            source, target = edge
+            self.add_node(source)
+            self.add_node(target)
+            # Możemy wykluczyć pętle.
+            if source == target:
+                raise ValueError("pętle są zabronione")
+            if target not in self.graph_dict[source]:
+                self.graph_dict[source].append(target)
+
+
+class GraphUndirected(Graph):
+    def add_edge(self, *edges):
+        """Dodaje krawędź do grafu nieskierowanego."""
+        for edge in edges:
+            source, target = edge
+            self.add_node(source)
+            self.add_node(target)
+            # Możemy wykluczyć pętle.
+            if source == target:
+                raise ValueError("pętle są zabronione")
+            if target not in self.graph_dict[source]:
+                self.graph_dict[source].append(target)
+            if source not in self.graph_dict[target]:
+                self.graph_dict[target].append(source)
