@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
-from graph import GraphUndirected
-from graph import GraphDirected
+from graph141 import GraphUndirected
+from graph141 import GraphDirected
 import random
 
 
 class GraphCopmplete(GraphUndirected):
     def add_node(self, *nodes):
         for node in nodes:
-            lista_tych_samych_elementow_node = [node]*len(self.listnodes())
-            edge_list = zip(lista_tych_samych_elementow_node, self.listnodes())
+            lista_tych_samych_elementow_node = [node]*len(self.list_nodes())
+            edge_list = zip(lista_tych_samych_elementow_node, self.list_nodes())
 
             super(GraphCopmplete, self).add_node(node)
 

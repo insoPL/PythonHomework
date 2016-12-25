@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 
-# wykorzystuje kod oparty na na słowniku tak jak jest w przykładzie z dokumentacji
+# realizuje zadanie 14.1
+# nie moglem nazwac pliku "14.1" poniwaz potrzebowalem go do importu
+
+# wykorzystuje kod oparty na na słowniku z przykładu z dokumentacji
 
 
 class Graph(object):
@@ -13,18 +16,26 @@ class Graph(object):
             if node not in self._graph_dict:
                 self._graph_dict[node] = []
 
-    def listnodes(self):
+    def list_nodes(self):
         """Zwraca listę wierzchołków grafu."""
         return self._graph_dict.keys()
 
-    def listedges(self):
+    def count_nodes(self):
+        """Zwraca liczbę wierzchołków"""
+        return len(self.list_nodes())
+
+    def list_edges(self):
         """Zwraca listę krawędzi (krotek) grafu."""
         L = []
         for source in self._graph_dict:
             for target in self._graph_dict[source]:
                 L.append((source, target))
         return L
-    
+
+    def count_edges(self):
+        """Zwraca liczbę krawędzi grafu"""
+        return len(self.list_edges())
+
     def print_graph(self):
         """Wypisuje postać grafu na ekranie."""
         for source in self._graph_dict:
