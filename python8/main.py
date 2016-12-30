@@ -60,9 +60,9 @@ def P_dynamic(a, b):  # 10 000 w 20 sek
             elif aa == 0 and bb > 0:
                 P_dict[aa, bb] = 1.0
             elif aa > 0 and bb > 0:
-                P_dict[aa, bb] = P_dict[aa - 1, bb] + P_dict[aa, bb - 1]
+                P_dict[aa, bb] = (P_dict[aa - 1, bb] + P_dict[aa, bb - 1]) * 0.5
     return P_dict[a, b]
 
-for i in xrange(1000):
-    for j in xrange(10):
-        P_dynamic(i, j)
+print "wynik:"
+print P_dynamic(15, 15)
+print P(15, 15)
