@@ -15,6 +15,8 @@ lista = Node(0)
 for i in xrange(1, 20):
     lista = Node(i, lista)
 
+lista = Node(0)
+
 
 def print_list(node):
     while node:
@@ -23,11 +25,15 @@ def print_list(node):
 
 
 def delete_head(node):
+    if node is None:
+        raise ValueError
     return node.next, node.data
 
 
 def remove_tail(node):
-    if node.next is None:
+    if node is None:
+        raise ValueError
+    elif node.next is None:
         return None, node.data
 
     new_head = node
