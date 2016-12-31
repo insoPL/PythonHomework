@@ -17,12 +17,12 @@ def swap(L, left, right):
 
 
 def quicksort(L, left, right, compare=cmp):
-    if compare(left, right) > 0:
+    if left >= right:
         return
     swap(L, left, (left + right) / 2)   # element podziału
     pivot = left                      # przesuń do L[left]
     for i in range(left + 1, right + 1):   # podział
-        if L[i] < L[left]:
+        if compare(L[i], L[left]) < 0:
             pivot += 1
             swap(L, pivot, i)
     swap(L, left, pivot)     # odtwórz element podziału

@@ -12,7 +12,7 @@ class RandomQueue:
 
     def remove(self):   # zwraca losowy element
         rand = random.randint(0, len(self)-1)
-        return self.items.pop(rand)
+        return self.items.pop()
 
     def is_empty(self):
         return not self.items

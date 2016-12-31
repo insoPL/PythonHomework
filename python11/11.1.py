@@ -34,19 +34,10 @@ def not_as_random_list_revert(n):
     return re_list
 
 
-def gauss_random_number(maximum, odchylenie=2):
-    srednia = 0
-    podzial = 0
-    for i in range(odchylenie):
-        srednia += random.randint(0, maximum)
-        podzial += 1
-    return srednia/podzial
-
-
 def gauss_random_list(n):
     re_list = list()
     for i in xrange(n):
-        re_list.append(gauss_random_number(10))
+        re_list.append(random.gauss(0, 1))
     return re_list
 
 
