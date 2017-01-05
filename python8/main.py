@@ -4,9 +4,12 @@ import math
 
 def solve1(a, b, c):
     """Rozwiązywanie równania liniowego a x + b y + c = 0."""
-    aa = a/-b
-    cc = c/-b #aax + cc=y
-    return a+c/-b
+    print "Równanie ma wykres y= "+str(-a/b)+"x",
+    if -c/b>0:
+        print "+",
+    print str(-c/b)
+
+solve1(1,1,-1)
 
 
 def calc_pi(n=100):
@@ -20,7 +23,6 @@ def calc_pi(n=100):
             pi+=1
     print pi* 4.0 / n
 
-calc_pi()
 
 def heron(a, b, c):
     """Obliczanie pola powierzchni trójkąta za pomocą wzoru
@@ -29,8 +31,6 @@ def heron(a, b, c):
         raise ValueError
     p = 1.0/2.0 * (a+b+c)
     print math.sqrt(p*(p-a)*(p-b)*(p-c))
-
-heron(3, 3, 3)
 
 
 def P(a, b):  # 1 000 w ponad 2 min
@@ -62,7 +62,3 @@ def P_dynamic(a, b):  # 10 000 w 20 sek
             elif aa > 0 and bb > 0:
                 P_dict[aa, bb] = (P_dict[aa - 1, bb] + P_dict[aa, bb - 1]) * 0.5
     return P_dict[a, b]
-
-print "wynik:"
-print P_dynamic(15, 15)
-print P(15, 15)
